@@ -1,5 +1,3 @@
-package com;
-
 import java.sql.*;
 
 public class InsertData {
@@ -13,7 +11,7 @@ public class InsertData {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 						
 			//2.Establish Connection
-			c= DriverManager.getConnection("jdbc:mysql://localhost:3306/yourdatabasename", "yourdbusername", "yourdbpassword");
+			c = DriverManager.getConnection("jdbc:mysql://localhost:3306/emp_db", "root", "root");
 			
 			//3.Create Statement
 			Statement s = c.createStatement();
